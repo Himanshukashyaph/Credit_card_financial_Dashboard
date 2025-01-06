@@ -53,7 +53,7 @@ CREATE TABLE cust_detail (
 -- copy cc_detail table
 
 COPY cc_detail
-FROM 'D:\credit_card.csv' 
+FROM 'C:\Power_BI\credit_card.csv' 
 DELIMITER ',' 
 CSV HEADER;
 
@@ -61,7 +61,7 @@ CSV HEADER;
 -- copy cust_detail table
 
 COPY cust_detail
-FROM 'D:\customer.csv' 
+FROM 'C:\Power_BI\customer.csv' 
 DELIMITER ',' 
 CSV HEADER;
 
@@ -84,15 +84,15 @@ SET datestyle TO 'ISO, DMY';
 -- copy additional data (week-53) in cc_detail table
 
 COPY cc_detail
-FROM 'D:\cc_add.csv' 
+FROM 'C:\Power_BI\cc_add.csv' 
 DELIMITER ',' 
 CSV HEADER;
 
 
--- copy additional data (week-53) in cust_detail table (remember to update the file name and file location in below query)
+-- copy additional data (week-53) in cust_detail
 
 COPY cust_detail
-FROM 'D:\cust_add.csv' 
+FROM 'C:\Power_BI\cust_add.csv' 
 DELIMITER ',' 
 CSV HEADER;
 
